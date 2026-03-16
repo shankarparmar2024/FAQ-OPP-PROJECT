@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+}
+
+.qa-item{
+    background:white;
+    margin:15px auto;
+    padding:15px;
+    max-width:600px;
+    border-radius:6px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+}
+
+.answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.4s ease;
+    margin-top:10px;
+}
+
+.qa-item.active .answer{
+    max-height:200px;
+}
+
+.icon{
+    font-weight:bold;
+}
